@@ -2,6 +2,7 @@ import { TOOLS } from '@common';
 import { Block, Icon, Image, List, ListItem, PageLayout, Text } from '@components';
 import { useNavigate } from 'react-router-dom';
 import { IconTypeName } from 'src/components/Icon/types';
+import logoImage from '@assets/images/main.png';
 
 export const MainPage = () => {
   const navigation = useNavigate();
@@ -14,11 +15,7 @@ export const MainPage = () => {
 
   return (
     <PageLayout center maxWidth={500}>
-      <Image
-        borderRadius={12}
-        size={112}
-        src="https://cdn.joincommunity.xyz/gateway/gateway-logo.jpeg"
-      />
+      <Image size={112} src={logoImage} />
       <Block margin="top" marginValue={16}>
         <Text type="title" align="center" weight="bold" color="primary">
           Telegram Tools
@@ -26,9 +23,9 @@ export const MainPage = () => {
       </Block>
       <Block margin="top" marginValue={12}>
         <Text type="text" align="center" color="primary">
-          An open-source toolkit by independent developers to extend what’s possible with Telegram.
-          Includes utilities and interfaces to automate, manage, and scale bots, channels, groups,
-          and API workflows.
+          An open-source toolkit by independent developers to extend what's possible with Telegram.
+          Includes utilities and interfaces to automate, manage, and scale bots, channels, groups,
+          and API workflows.
         </Text>
       </Block>
       <Block margin="top" marginValue={32}>
