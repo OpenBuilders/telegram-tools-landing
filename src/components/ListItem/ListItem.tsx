@@ -15,6 +15,7 @@ interface ListItemProps {
   disabled?: boolean;
   paddingY?: 10 | 6;
   label?: string;
+  noPointer?: boolean;
 }
 
 export const ListItem = ({
@@ -28,6 +29,7 @@ export const ListItem = ({
   onClick,
   paddingY = 10,
   label,
+  noPointer,
 }: ListItemProps) => {
   const handleClick = () => {
     if (onClick && !disabled) {
@@ -41,6 +43,7 @@ export const ListItem = ({
         styles.container,
         onClick && styles.clickable,
         disabled && styles.disabled,
+        noPointer && styles.noPointer,
         paddingY && styles[`paddingY-${paddingY}`],
       )}
       onClick={handleClick}

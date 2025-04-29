@@ -34,6 +34,7 @@ export const MainPage = () => {
             const isActive = !!tool.link;
             return (
               <ListItem
+                noPointer={!isActive}
                 key={tool.id}
                 text={
                   <Text type="text" weight="medium">
