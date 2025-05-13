@@ -10,3 +10,4 @@ export * from './chevron';
 export * from './eyeCrossed';
 export * from './eye';
 export * from './vestingBot';
+export * from './giveawayBot';

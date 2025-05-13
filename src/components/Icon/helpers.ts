@@ -11,6 +11,7 @@ import {
   eyeCrossed,
   eye,
   vestingBot,
+  giveawayBot,
 } from './icons';
 import { IconTypeName } from './types';
 
@@ -38,6 +39,8 @@ export const getIcon = (name: IconTypeName) => {
       return eyeCrossed;
     case 'vestingBot':
       return vestingBot;
+    case 'giveawayBot':
+      return giveawayBot;
     case 'eye':
       return eye;
   }
