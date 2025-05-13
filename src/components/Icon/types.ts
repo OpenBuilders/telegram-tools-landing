@@ -16,6 +16,7 @@ export type IconTypeName =
   | 'chevron'
   | 'eyeCrossed'
   | 'eye'
-  | 'vestingBot';
+  | 'vestingBot'
+  | 'giveawayBot';
 
 export type IconSize = 112 | 100 | 44 | 28 | 24 | 20 | 16 | 12 | 7;

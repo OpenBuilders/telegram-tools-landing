@@ -8,6 +8,13 @@ export const TOOLS = [
   },
   {
     id: 2,
+    name: 'Giveaway',
+    description: 'Create and join giveaways',
+    link: null,
+    icon: 'giveawayBot',
+  },
+  {
+    id: 3,
     name: 'Vesting',
     description: 'Scheduled token releases',
     link: null,
