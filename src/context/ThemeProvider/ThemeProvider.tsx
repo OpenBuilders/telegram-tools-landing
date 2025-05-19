@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { ThemeContext } from './ThemeContext';
 
@@ -7,9 +7,24 @@ interface Props {
 }
 
 export const ThemeProvider = ({ children }: Props) => {
-  const lightTgTheme = true;
+  const [darkTheme, setDarkTheme] = useState(
+    () => window.matchMedia('(prefers-color-scheme: dark)').matches,
+  );
 
-  const [darkTheme, setDarkTheme] = useState(!lightTgTheme);
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', darkTheme ? 'dark' : 'light');
+  }, [darkTheme]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      setDarkTheme(e.matches);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
 
   const toggleThemeHandler = () => {
     setDarkTheme((prevState) => !prevState);
@@ -18,7 +33,7 @@ export const ThemeProvider = ({ children }: Props) => {
   return (
     <ThemeContext.Provider
       value={{
-        darkTheme: darkTheme,
+        darkTheme,
         toggleTheme: toggleThemeHandler,
       }}
     >
