@@ -3,7 +3,7 @@ export const TOOLS = [
     id: 1,
     name: 'Gateway',
     description: 'Access to chats and channels',
-    link: 'https://t.me/ggooccttaa_bot?startapp',
+    link: null,
     icon: 'gatewayBot',
   },
   {
