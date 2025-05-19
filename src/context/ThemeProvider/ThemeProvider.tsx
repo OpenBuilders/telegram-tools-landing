@@ -13,6 +13,14 @@ export const ThemeProvider = ({ children }: Props) => {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', darkTheme ? 'dark' : 'light');
+
+    // Обновляем favicon в зависимости от темы
+    const favicon = document.querySelector("link[rel*='icon']") as HTMLLinkElement;
+    if (favicon) {
+      favicon.href = darkTheme
+        ? 'https://cdn.joincommunity.xyz/gateway/favicon_light.png '
+        : 'https://cdn.joincommunity.xyz/gateway/favicon_dark.png';
+    }
   }, [darkTheme]);
 
   useEffect(() => {
