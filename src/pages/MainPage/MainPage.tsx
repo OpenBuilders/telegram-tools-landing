@@ -1,16 +1,13 @@
 import { TOOLS } from '@common';
 import { Block, Icon, Image, List, ListItem, PageLayout, Text } from '@components';
-import { useNavigate } from 'react-router-dom';
 import { IconTypeName } from 'src/components/Icon/types';
 import logoImage from '@assets/images/main.png';
 
 export const MainPage = () => {
-  const navigation = useNavigate();
-
   const handleNavigate = (link: string | null) => {
     if (!link) return;
 
-    navigation(link);
+    window.open(link, '_blank');
   };
 
   return (

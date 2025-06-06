@@ -1,9 +1,9 @@
 export const TOOLS = [
   {
     id: 1,
-    name: 'Gateway',
+    name: 'Access',
     description: 'Access to chats and channels',
-    link: null,
+    link: 'https://t.me/access_app_bot?startapp=',
     icon: 'gatewayBot',
   },
   {
