@@ -52,7 +52,7 @@ export const MainPage = () => {
       </Block>
       <Block fixed="bottom" margin="bottom" marginValue={16}>
         <Text
-          type="text"
+          type="caption"
           align="center"
           color="tertiary"
           href="https://t.me/join_community/264"
