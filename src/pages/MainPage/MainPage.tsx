@@ -24,7 +24,7 @@ export const MainPage = () => {
         </Text>
       </Block>
       <Block margin="top" marginValue={32}>
-        <List header="Available Products" separatorLeftGap={40}>
+        <List separatorLeftGap={40}>
           {TOOLS.map((tool) => {
             const isActive = !!tool.link;
             return (

@@ -18,8 +18,8 @@ export const ThemeProvider = ({ children }: Props) => {
     const favicon = document.querySelector("link[rel*='icon']") as HTMLLinkElement;
     if (favicon) {
       favicon.href = darkTheme
-        ? 'https://cdn.joincommunity.xyz/gateway/favicon_light.png '
-        : 'https://cdn.joincommunity.xyz/gateway/favicon_dark.png';
+        ? 'https://cdn.joincommunity.xyz/gateway/favicon_dark.png'
+        : 'https://cdn.joincommunity.xyz/gateway/favicon_light.png';
     }
   }, [darkTheme]);
 
