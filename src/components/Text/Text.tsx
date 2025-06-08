@@ -1,16 +1,17 @@
-import cn from 'classnames'
+import cn from 'classnames';
 
-import styles from './Text.module.scss'
+import styles from './Text.module.scss';
 
 interface TextProps {
-  children: React.ReactNode | string
-  type: 'title' | 'title1' | 'text' | 'link' | 'caption' | 'caption2'
-  align?: 'left' | 'center' | 'right'
-  color?: 'primary' | 'tertiary' | 'secondary' | 'accent' | 'danger'
-  weight?: 'normal' | 'medium' | 'bold'
-  href?: string
-  as?: 'p' | 'span' | 'div' | 'a'
-  uppercase?: boolean
+  children: React.ReactNode | string;
+  type: 'title' | 'title1' | 'text' | 'link' | 'caption' | 'caption2';
+  align?: 'left' | 'center' | 'right';
+  color?: 'primary' | 'tertiary' | 'secondary' | 'accent' | 'danger';
+  weight?: 'normal' | 'medium' | 'bold';
+  href?: string;
+  as?: 'p' | 'span' | 'div' | 'a';
+  uppercase?: boolean;
+  target?: '_blank';
 }
 
 export const Text = ({
@@ -22,8 +23,9 @@ export const Text = ({
   href,
   as = 'p',
   uppercase,
+  target,
 }: TextProps) => {
-  const Component = as
+  const Component = as;
   return (
     <Component
       className={cn(
@@ -32,12 +34,12 @@ export const Text = ({
         styles[align],
         styles[color],
         styles[weight],
-        uppercase && styles.uppercase
+        uppercase && styles.uppercase,
       )}
       {...(href && { href })}
-      {...(as && { as })}
+      {...(as === 'a' && { target })}
     >
       {children}
     </Component>
-  )
-}
+  );
+};

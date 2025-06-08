@@ -20,9 +20,7 @@ export const MainPage = () => {
       </Block>
       <Block margin="top" marginValue={12}>
         <Text type="text" align="center" color="primary">
-          An open-source toolkit by independent developers to extend what's possible with Telegram.
-          Includes utilities and interfaces to automate, manage, and scale bots, channels, groups,
-          and API workflows.
+          Open-source tools for Telegram. Created by independent developers for the community.
         </Text>
       </Block>
       <Block margin="top" marginValue={32}>
@@ -51,6 +49,18 @@ export const MainPage = () => {
             );
           })}
         </List>
+      </Block>
+      <Block fixed="bottom" margin="bottom" marginValue={16}>
+        <Text
+          type="text"
+          align="center"
+          color="tertiary"
+          href="https://t.me/join_community/264"
+          as="a"
+          target="_blank"
+        >
+          BACKED BY BUILD
+        </Text>
       </Block>
     </PageLayout>
   );
