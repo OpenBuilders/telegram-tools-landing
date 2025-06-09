@@ -12,6 +12,7 @@ import {
   eye,
   vestingBot,
   giveawayBot,
+  github,
 } from './icons';
 import { IconTypeName } from './types';
 
@@ -43,5 +44,7 @@ export const getIcon = (name: IconTypeName) => {
       return giveawayBot;
     case 'eye':
       return eye;
+    case 'github':
+      return github;
   }
 };

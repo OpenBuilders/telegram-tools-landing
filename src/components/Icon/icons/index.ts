@@ -11,3 +11,4 @@ export * from './eyeCrossed';
 export * from './eye';
 export * from './vestingBot';
 export * from './giveawayBot';
+export * from './github';
