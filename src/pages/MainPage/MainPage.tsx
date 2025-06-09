@@ -7,11 +7,6 @@ import { ROUTES_NAME } from '@routes';
 
 export const MainPage = () => {
   const navigate = useNavigate();
-  // const handleNavigate = (link: string | null) => {
-  //   if (!link) return;
-
-  //   window.open(link, '_blank');
-  // };
 
   return (
     <PageLayout center maxWidth={500}>
