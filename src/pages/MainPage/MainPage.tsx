@@ -2,13 +2,16 @@ import { TOOLS } from '@common';
 import { Block, Icon, Image, List, ListItem, PageLayout, Text } from '@components';
 import { IconTypeName } from 'src/components/Icon/types';
 import logoImage from '@assets/images/main.png';
+import { useNavigate } from 'react-router-dom';
+import { ROUTES_NAME } from '@routes';
 
 export const MainPage = () => {
-  const handleNavigate = (link: string | null) => {
-    if (!link) return;
+  const navigate = useNavigate();
+  // const handleNavigate = (link: string | null) => {
+  //   if (!link) return;
 
-    window.open(link, '_blank');
-  };
+  //   window.open(link, '_blank');
+  // };
 
   return (
     <PageLayout center maxWidth={500}>
@@ -26,10 +29,9 @@ export const MainPage = () => {
       <Block margin="top" marginValue={32}>
         <List separatorLeftGap={40}>
           {TOOLS.map((tool) => {
-            const isActive = !!tool.link;
             return (
               <ListItem
-                noPointer={!isActive}
+                noPointer={!tool.isActive}
                 key={tool.id}
                 text={
                   <Text type="text" weight="medium">
@@ -41,10 +43,10 @@ export const MainPage = () => {
                     {tool.description}
                   </Text>
                 }
-                label={isActive ? undefined : 'soon'}
+                label={tool.isActive ? undefined : 'soon'}
                 before={tool.icon && <Icon name={tool.icon as IconTypeName} size={44} />}
-                onClick={() => handleNavigate(tool?.link)}
-                chevron={isActive}
+                onClick={() => navigate(`${ROUTES_NAME.APP_PAGE}/${tool.id}`)}
+                chevron={tool.isActive}
               />
             );
           })}
