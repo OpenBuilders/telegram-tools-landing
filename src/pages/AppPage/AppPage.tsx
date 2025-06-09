@@ -4,11 +4,14 @@ import { IconTypeName } from 'src/components/Icon/types';
 
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useClipboard } from '@hooks';
 
 export const AppPage = () => {
   const params = useParams();
   const toolId = params.id;
   const [appData, setAppData] = useState<(typeof TOOLS)[0] | null>(null);
+
+  const { copy } = useClipboard();
 
   useEffect(() => {
     const tool = TOOLS.find((tool) => tool.id === Number(toolId));
@@ -23,8 +26,14 @@ export const AppPage = () => {
     window.open(link, '_blank');
   };
 
+  const handleCopy = () => {
+    if (!appData.link) return;
+
+    copy(appData.link, 'Link copied!');
+  };
+
   return (
-    <PageLayout center maxWidth={500}>
+    <PageLayout center maxWidth={500} margin="32px auto">
       <Icon name={appData.icon as IconTypeName} size={112} />
       <Block margin="top" marginValue={16}>
         <Text type="title" align="center" weight="bold" color="primary">
@@ -36,7 +45,7 @@ export const AppPage = () => {
           {appData.description}
         </Text>
       </Block>
-      <Block margin="top" marginValue={8}>
+      <Block margin="top" marginValue={8} onClick={handleCopy}>
         <Text type="text" align="center" color="tertiary">
           @{appData.botName}
         </Text>
