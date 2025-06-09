@@ -72,6 +72,11 @@ export const AppPage = () => {
                       <Image borderRadius={50} src={contributor.image} size={40} />
                     )
                   }
+                  description={
+                    <Text type="caption2" color="tertiary">
+                      {contributor.role}
+                    </Text>
+                  }
                   onClick={() => handleOpenLink(contributor.link)}
                   chevron={isActive}
                 />
