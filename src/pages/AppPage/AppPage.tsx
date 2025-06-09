@@ -46,7 +46,7 @@ export const AppPage = () => {
         </Text>
       </Block>
       <Block margin="top" marginValue={8} onClick={handleCopy}>
-        <Text type="text" align="center" color="tertiary">
+        <Text type="text" align="center" color="tertiary" pointer>
           @{appData.botName}
         </Text>
       </Block>

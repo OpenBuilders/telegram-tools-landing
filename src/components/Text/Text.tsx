@@ -12,6 +12,7 @@ interface TextProps {
   as?: 'p' | 'span' | 'div' | 'a';
   uppercase?: boolean;
   target?: '_blank';
+  pointer?: boolean;
 }
 
 export const Text = ({
@@ -24,6 +25,7 @@ export const Text = ({
   as = 'p',
   uppercase,
   target,
+  pointer,
 }: TextProps) => {
   const Component = as;
   return (
@@ -35,6 +37,7 @@ export const Text = ({
         styles[color],
         styles[weight],
         uppercase && styles.uppercase,
+        pointer && styles.pointer,
       )}
       {...(href && { href })}
       {...(as === 'a' && { target })}

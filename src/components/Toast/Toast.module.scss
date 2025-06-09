@@ -1,8 +1,10 @@
 .toast {
   position: fixed;
   z-index: 9000000000000000;
-  left: 16px;
-  right: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: calc(500px - 32px);
+  width: calc(100% - 32px);
   bottom: 24px;
   font-family: var(--tgui--font-family) !important;
 }
