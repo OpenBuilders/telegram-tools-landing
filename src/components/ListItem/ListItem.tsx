@@ -3,6 +3,7 @@ import { useContext } from 'react';
 
 import { Icon } from '../Icon';
 import styles from './ListItem.module.scss';
+import { ThemeContext } from '@context';
 
 interface ListItemProps {
   text?: React.ReactNode;
@@ -31,6 +32,7 @@ export const ListItem = ({
   label,
   noPointer,
 }: ListItemProps) => {
+  const { darkTheme } = useContext(ThemeContext);
   const handleClick = () => {
     if (onClick && !disabled) {
       onClick();
@@ -64,7 +66,7 @@ export const ListItem = ({
       <div className={styles.right}>
         {after || null}
         {chevron && (
-          <div className={cn(styles.chevron)}>
+          <div className={cn(styles.chevron, darkTheme && styles.darkChevron)}>
             <Icon name="chevron" />
           </div>
         )}
