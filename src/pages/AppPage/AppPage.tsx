@@ -2,7 +2,7 @@ import { TOOLS } from '@common';
 import { Block, Button, Icon, Image, List, ListItem, PageLayout, Text } from '@components';
 import { IconTypeName } from 'src/components/Icon/types';
 
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useClipboard } from '@hooks';
 
@@ -10,13 +10,18 @@ export const AppPage = () => {
   const params = useParams();
   const toolId = params.id;
   const [appData, setAppData] = useState<(typeof TOOLS)[0] | null>(null);
+  const navigate = useNavigate();
 
   const { copy } = useClipboard();
 
   useEffect(() => {
     const tool = TOOLS.find((tool) => tool.id === Number(toolId));
+    if (!tool?.isActive || !tool?.link) {
+      navigate('/');
+      return;
+    }
     setAppData(tool || null);
-  }, [toolId]);
+  }, [toolId, navigate]);
 
   if (!appData) return null;
 
