@@ -40,7 +40,10 @@ export const MainPage = () => {
                 }
                 label={tool.isActive ? undefined : 'soon'}
                 before={tool.icon && <Icon name={tool.icon as IconTypeName} size={44} />}
-                onClick={() => navigate(`${ROUTES_NAME.APP_PAGE}/${tool.id}`)}
+                onClick={() => {
+                  if (!tool.isActive || !tool.link) return;
+                  navigate(`${ROUTES_NAME.APP_PAGE}/${tool.id}`);
+                }}
                 chevron={tool.isActive}
               />
             );
