@@ -37,11 +37,11 @@ export const TOOLS = [
     extraLinks: [
       {
         name: 'Feedback or Suggestion',
-        link: 'https://t.me/join_community/264',
+        link: 'https://t.me/tools_community',
       },
       {
         name: 'How to Contribute?',
-        link: 'https://t.me/join_community/264',
+        link: 'https://github.com/OpenBuilders/gateway-tool?tab=readme-ov-file#contributing',
       },
     ],
   },
