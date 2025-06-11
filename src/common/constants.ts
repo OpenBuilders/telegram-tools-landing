@@ -8,22 +8,16 @@ export const TOOLS = [
     github: 'https://github.com/OpenBuilders/gateway-tool',
     contributors: [
       {
-        name: '@takoy_sasha',
-        link: null,
-        image: 'https://t.me/i/userpic/320/takoy_sasha.jpg',
-        role: 'The Visionary',
+        name: '@danoctua',
+        link: 'https://github.com/danoctua',
+        image: 'https://t.me/i/userpic/320/danoctua.jpg',
+        role: 'Developer',
       },
       {
         name: '@kirill_sidorets',
         link: 'https://t.me/kirill_sidorets',
         image: 'https://t.me/i/userpic/320/kirill_sidorets.jpg',
         role: 'Designer',
-      },
-      {
-        name: '@danoctua',
-        link: 'https://github.com/danoctua',
-        image: 'https://t.me/i/userpic/320/danoctua.jpg',
-        role: 'Developer',
       },
       {
         name: '@mityai_shamal',
