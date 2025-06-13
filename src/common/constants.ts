@@ -5,7 +5,7 @@ export const TOOLS = [
     botName: 'access_app_bot',
     description: 'Access to chats and channels',
     link: 'https://t.me/access_app_bot?startapp=',
-    github: 'https://github.com/OpenBuilders/gateway-tool',
+    github: 'https://github.com/OpenBuilders/access-tool',
     contributors: [
       {
         name: '@danoctua',
@@ -35,7 +35,7 @@ export const TOOLS = [
       },
       {
         name: 'How to Contribute?',
-        link: 'https://github.com/OpenBuilders/gateway-tool?tab=readme-ov-file#contributing',
+        link: 'https://github.com/OpenBuilders/access-tool?tab=readme-ov-file#contributing',
       },
     ],
   },
