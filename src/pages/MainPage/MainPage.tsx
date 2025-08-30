@@ -55,7 +55,7 @@ export const MainPage = () => {
           type="caption"
           align="center"
           color="tertiary"
-          href="https://t.me/join_community/264"
+          href="https://t.me/builders/264"
           as="a"
           target="_blank"
         >
