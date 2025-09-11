@@ -15,7 +15,7 @@ export const TOOLS = [
       },
       {
         name: '@kirill_sidorets',
-        link: 'https://t.me/kirill_sidorets',
+        link: null,
         image: 'https://t.me/i/userpic/320/kirill_sidorets.jpg',
         role: 'Designer',
       },
