@@ -41,6 +41,34 @@ export const TOOLS = [
   },
   {
     id: 2,
+    name: 'Contests',
+    botName: 'ContonestBot',
+    description: 'Manage and join contests effortlessly!',
+    link: 'https://t.me/ContonestBot?startapp=',
+    github: 'https://github.com/OpenBuilders/contest-tool',
+    contributors: [
+      {
+        name: '@Eyfan',
+        link: 'https://github.com/erfanmola',
+        image: 'https://t.me/i/userpic/320/Eyfan.jpg',
+        role: 'Developer',
+      },
+    ],
+    isActive: true,
+    icon: 'gatewayBot',
+    extraLinks: [
+      {
+        name: 'Feedback or Suggestion',
+        link: 'https://t.me/tools_community',
+      },
+      {
+        name: 'How to Contribute?',
+        link: 'https://github.com/OpenBuilders/access-tool?tab=readme-ov-file#contributing',
+      },
+    ],
+  },
+  {
+    id: 3,
     name: 'Giveaway',
     description: 'Create and join giveaways',
     link: null,
@@ -52,7 +80,7 @@ export const TOOLS = [
     botName: null,
   },
   {
-    id: 3,
+    id: 4,
     name: 'Vesting',
     description: 'Scheduled token releases',
     link: null,
