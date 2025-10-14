@@ -39,7 +39,8 @@ export const AppPage = () => {
 
   return (
     <PageLayout center maxWidth={500} margin="32px auto">
-      <Icon name={appData.icon as IconTypeName} size={112} />
+      {(appData.icon && <Icon name={appData.icon as IconTypeName} size={112} />) ||
+        (appData.image && <Image src={appData.image} size={112} borderRadius={16} />)}
       <Block margin="top" marginValue={16}>
         <Text type="title" align="center" weight="bold" color="primary">
           {appData.name}

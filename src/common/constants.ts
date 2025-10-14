@@ -27,7 +27,8 @@ export const TOOLS = [
       },
     ],
     isActive: true,
-    icon: 'gatewayBot',
+    icon: null,
+    image: 'https://t.me/i/userpic/320/access_app_bot.jpg',
     extraLinks: [
       {
         name: 'Feedback or Suggestion',
@@ -42,9 +43,9 @@ export const TOOLS = [
   {
     id: 2,
     name: 'Contests',
-    botName: 'ContonestBot',
+    botName: 'contests_app_bot',
     description: 'Manage and join contests effortlessly!',
-    link: 'https://t.me/ContonestBot?startapp=',
+    link: 'https://t.me/contests_app_bot?startapp=',
     github: 'https://github.com/OpenBuilders/contest-tool',
     contributors: [
       {
@@ -55,15 +56,16 @@ export const TOOLS = [
       },
     ],
     isActive: true,
-    icon: 'gatewayBot',
+    icon: null,
+    image: 'https://t.me/i/userpic/320/contests_app_bot.jpg',
     extraLinks: [
-      {
-        name: 'Feedback or Suggestion',
-        link: 'https://t.me/tools_community',
-      },
+      // {
+      //   name: 'Feedback or Suggestion',
+      //   link: 'https://t.me/tools_community',
+      // },
       {
         name: 'How to Contribute?',
-        link: 'https://github.com/OpenBuilders/access-tool?tab=readme-ov-file#contributing',
+        link: 'https://docs.contest.tools.tg/',
       },
     ],
   },
