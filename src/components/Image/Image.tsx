@@ -1,15 +1,13 @@
 import cn from 'classnames';
 
-import config from '@config';
-
 import styles from './Image.module.scss';
 import { getColor, getFirstLetter } from './helpers';
 
 interface ImageProps {
   fallback?: string;
   src?: string | null;
-  size: 24 | 40 | 112;
-  borderRadius?: 50 | 12 | 8;
+  size: 24 | 40 | 44 | 112;
+  borderRadius?: 50 | 16 | 12 | 8;
 }
 
 export const Image = ({ src, size, borderRadius, fallback }: ImageProps) => {

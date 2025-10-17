@@ -39,7 +39,10 @@ export const MainPage = () => {
                   </Text>
                 }
                 label={tool.isActive ? undefined : 'soon'}
-                before={tool.icon && <Icon name={tool.icon as IconTypeName} size={44} />}
+                before={
+                  (tool.icon && <Icon name={tool.icon as IconTypeName} size={44} />) ||
+                  (tool.image && <Image src={tool.image} size={40} borderRadius={12} />)
+                }
                 onClick={() => {
                   if (!tool.isActive || !tool.link) return;
                   navigate(`${ROUTES_NAME.APP_PAGE}/${tool.id}`);

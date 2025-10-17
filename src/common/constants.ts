@@ -27,7 +27,8 @@ export const TOOLS = [
       },
     ],
     isActive: true,
-    icon: 'gatewayBot',
+    icon: null,
+    image: 'https://t.me/i/userpic/320/access_app_bot.jpg',
     extraLinks: [
       {
         name: 'Feedback or Suggestion',
@@ -41,6 +42,35 @@ export const TOOLS = [
   },
   {
     id: 2,
+    name: 'Contests',
+    botName: 'contests_app_bot',
+    description: 'Manage and join contests effortlessly!',
+    link: 'https://t.me/contests_app_bot?startapp=',
+    github: 'https://github.com/OpenBuilders/contest-tool',
+    contributors: [
+      {
+        name: '@Eyfan',
+        link: 'https://github.com/erfanmola',
+        image: 'https://t.me/i/userpic/320/Eyfan.jpg',
+        role: 'Developer',
+      },
+    ],
+    isActive: true,
+    icon: null,
+    image: 'https://t.me/i/userpic/320/contests_app_bot.jpg',
+    extraLinks: [
+      // {
+      //   name: 'Feedback or Suggestion',
+      //   link: 'https://t.me/tools_community',
+      // },
+      {
+        name: 'How to Contribute?',
+        link: 'https://docs.contest.tools.tg/',
+      },
+    ],
+  },
+  {
+    id: 3,
     name: 'Giveaway',
     description: 'Create and join giveaways',
     link: null,
@@ -52,7 +82,7 @@ export const TOOLS = [
     botName: null,
   },
   {
-    id: 3,
+    id: 4,
     name: 'Vesting',
     description: 'Scheduled token releases',
     link: null,
