@@ -59,10 +59,10 @@ export const TOOLS = [
     icon: null,
     image: 'https://t.me/i/userpic/320/contests_app_bot.jpg',
     extraLinks: [
-      // {
-      //   name: 'Feedback or Suggestion',
-      //   link: 'https://t.me/tools_community',
-      // },
+      {
+        name: 'Feedback or Suggestion',
+        link: 'https://t.me/c/tools_community/193226',
+      },
       {
         name: 'How to Contribute?',
         link: 'https://docs.contest.tools.tg/',
