@@ -1,7 +1,7 @@
 import { TOOLS } from '@common';
 import { Block, Icon, Image, List, ListItem, PageLayout, Text } from '@components';
 import { IconTypeName } from 'src/components/Icon/types';
-import logoImage from '@assets/images/main.png';
+import logoImage from '@assets/images/tools-logo.png';
 import { useNavigate } from 'react-router-dom';
 import { ROUTES_NAME } from '@routes';
 
