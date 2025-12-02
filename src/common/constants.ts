@@ -32,7 +32,7 @@ export const TOOLS = [
     extraLinks: [
       {
         name: 'Feedback or Suggestion',
-        link: 'https://t.me/tools_community',
+        link: 'https://t.me/c/tools_community/192942',
       },
       {
         name: 'How to Contribute?',
@@ -73,13 +73,42 @@ export const TOOLS = [
     id: 3,
     name: 'Giveaway',
     description: 'Create and join giveaways',
-    link: null,
-    isActive: false,
-    icon: 'giveawayBot',
-    extraLinks: null,
-    contributors: null,
-    github: null,
-    botName: null,
+    link: 'https://t.me/giveaway_app_bot?startapp=',
+    isActive: true,
+    image: 'https://t.me/i/userpic/320/giveaway_app_bot.jpg',
+    icon: null,
+    extraLinks: [
+      {
+        name: 'Feedback or Suggestion',
+        link: 'https://t.me/tools_community',
+      },
+      {
+        name: 'How to Contribute?',
+        link: 'https://github.com/OpenBuilders/giveaway-tool-frontend/blob/main/README.md',
+      },
+    ],
+    contributors: [
+      {
+        name: '@tondirt',
+        link: 'https://github.com/Seinarukiro2',
+        image: 'https://t.me/i/userpic/320/tondirt.jpg',
+        role: 'Developer',
+      },
+      {
+        name: '@djbuilder',
+        link: 'https://github.com/kopasxa',
+        image: 'https://t.me/i/userpic/320/djbuilder.jpg',
+        role: 'Developer',
+      },
+      {
+        name: '@kirill_sidorets',
+        link: null,
+        image: 'https://t.me/i/userpic/320/kirill_sidorets.jpg',
+        role: 'Designer',
+      },
+    ],
+    github: 'https://github.com/OpenBuilders/giveaway-tool-frontend', // TODO: add github link on backend & frontend
+    botName: 'giveaway_app_bot',
   },
   {
     id: 4,
