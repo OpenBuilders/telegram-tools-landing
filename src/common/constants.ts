@@ -37,7 +37,7 @@ export const TOOLS = [
     extraLinks: [
       {
         name: 'Feedback or Suggestion',
-        link: 'https://t.me/c/tools_community/192942',
+        link: 'https://t.me/tools_community/192942',
       },
       {
         name: 'How to Contribute?',
@@ -71,7 +71,7 @@ export const TOOLS = [
     extraLinks: [
       {
         name: 'Feedback or Suggestion',
-        link: 'https://t.me/c/tools_community/193226',
+        link: 'https://t.me/tools_community/193226',
       },
       {
         name: 'How to Contribute?',
