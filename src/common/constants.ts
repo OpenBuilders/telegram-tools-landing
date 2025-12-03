@@ -5,7 +5,12 @@ export const TOOLS = [
     botName: 'access_app_bot',
     description: 'Access to chats and channels',
     link: 'https://t.me/access_app_bot?startapp=',
-    github: 'https://github.com/OpenBuilders/access-tool',
+    github: [
+      {
+        name: 'Github',
+        link: 'https://github.com/OpenBuilders/access-tool',
+      },
+    ],
     contributors: [
       {
         name: '@danoctua',
@@ -46,7 +51,12 @@ export const TOOLS = [
     botName: 'contests_app_bot',
     description: 'Manage and join contests effortlessly!',
     link: 'https://t.me/contests_app_bot?startapp=',
-    github: 'https://github.com/OpenBuilders/contest-tool',
+    github: [
+      {
+        name: 'Github',
+        link: 'https://github.com/OpenBuilders/contest-tool',
+      },
+    ],
     contributors: [
       {
         name: '@Eyfan',
@@ -84,7 +94,7 @@ export const TOOLS = [
       },
       {
         name: 'How to Contribute?',
-        link: 'https://github.com/OpenBuilders/giveaway-tool-frontend/blob/main/README.md',
+        link: 'https://github.com/OpenBuilders/giveaway-tool-backend/blob/main/README.md',
       },
     ],
     contributors: [
@@ -107,7 +117,16 @@ export const TOOLS = [
         role: 'Designer',
       },
     ],
-    github: 'https://github.com/OpenBuilders/giveaway-tool-frontend', // TODO: add github link on backend & frontend
+    github: [
+      {
+        name: 'Backend',
+        link: 'https://github.com/OpenBuilders/giveaway-tool-backend',
+      },
+      {
+        name: 'Frontend',
+        link: 'https://github.com/OpenBuilders/giveaway-tool-frontend',
+      },
+    ],
     botName: 'giveaway_app_bot',
   },
   {

@@ -14,10 +14,12 @@ interface BlockProps {
   justify?: 'start' | 'center' | 'end' | 'between';
   align?: 'start' | 'center' | 'end';
   onClick?: () => void;
+  className?: string;
 }
 
 export const Block = ({
   children,
+  className,
   margin,
   marginValue,
   fixed,
@@ -52,6 +54,7 @@ export const Block = ({
         gap && styles[`gap-${gap}`],
         justify && styles[justify],
         align && styles[align],
+        className,
       )}
       onClick={onClick}
     >

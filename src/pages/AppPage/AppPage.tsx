@@ -5,6 +5,7 @@ import { IconTypeName } from 'src/components/Icon/types';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useClipboard } from '@hooks';
+import styles from './AppPage.module.scss';
 
 export const AppPage = () => {
   const params = useParams();
@@ -56,20 +57,36 @@ export const AppPage = () => {
           @{appData.botName}
         </Text>
       </Block>
-      <Block margin="top" marginValue={24} row justify="between" align="center" gap={10}>
+      <Block
+        margin="top"
+        marginValue={24}
+        className={styles.links}
+        justify="between"
+        align="center"
+        gap={10}
+      >
         <div style={{ flex: 1 }}>
           <Button type="primary" onClick={() => handleOpenLink(appData.link)}>
             Open App
           </Button>
         </div>
         <div style={{ flex: 1 }}>
-          <Button
-            type="accent"
-            onClick={() => handleOpenLink(appData.github)}
-            prefix={<Icon name="github" size={24} />}
-          >
-            Github
-          </Button>
+          <Block justify="between" align="center" gap={10} row>
+            {appData.github &&
+              appData.github.map((link) => {
+                return (
+                  <div style={{ flex: 1 }}>
+                    <Button
+                      type="accent"
+                      onClick={() => handleOpenLink(link.link)}
+                      prefix={<Icon name="github" size={24} />}
+                    >
+                      {link.name}
+                    </Button>
+                  </div>
+                );
+              })}
+          </Block>
         </div>
       </Block>
       {appData.contributors && (
