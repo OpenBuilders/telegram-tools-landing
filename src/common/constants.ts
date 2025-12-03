@@ -32,7 +32,7 @@ export const TOOLS = [
     extraLinks: [
       {
         name: 'Feedback or Suggestion',
-        link: 'https://t.me/tools_community',
+        link: 'https://t.me/c/tools_community/192942',
       },
       {
         name: 'How to Contribute?',
