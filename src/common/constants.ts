@@ -90,7 +90,7 @@ export const TOOLS = [
     extraLinks: [
       {
         name: 'Feedback or Suggestion',
-        link: 'https://t.me/tools_community',
+        link: 'https://t.me/tools_community/193511',
       },
       {
         name: 'How to Contribute?',
