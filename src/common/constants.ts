@@ -25,9 +25,9 @@ export const TOOLS = [
         role: 'Designer',
       },
       {
-        name: '@mityai_shamal',
+        name: '@no_sugar_daddy',
         link: 'https://github.com/Exerbaind',
-        image: 'https://t.me/i/userpic/320/mityai_shamal.jpg',
+        image: 'https://t.me/i/userpic/320/no_sugar_daddy.jpg',
         role: 'Developer',
       },
     ],
